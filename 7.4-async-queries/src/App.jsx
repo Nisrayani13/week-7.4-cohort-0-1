@@ -19,6 +19,7 @@ function MainApp() {
     // fetch
     axios.get("https://sum-server.100xdevs.com/notifications")
       .then(res => {
+        console.log(res.data)
         setNetworkCount(res.data)
       })
   }, [])
